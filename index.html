@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Duta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Content -->
+        <div class="main-content" id="mainContent">
+            <header>
+                <img src="contoh.jpg" alt="Foto Profil" class="profile-photo">
+                <h1>Duta Adithya Dewa</h1>
+                <p class="tagline">IoT Engineer | Electrical Engineer | Robotic Engineer</p>
+            </header>
+
+            <div class="section">
+                <h2>Tentang Saya</h2>
+                <p class="about-text">
+                    Saya adalah individu yang memiliki ketertarikan kuat pada bidang elektro, robotik, serta sistem otomasi. Saya terbiasa bekerja dengan perangkat mikrokontroler, sensor, aktuator, dan berbagai platform pengembangan seperti Arduino, ESP32, dan sistem IoT. Selain itu, saya memiliki minat pada desain rangkaian, integrasi hardware–software, serta pengembangan solusi otomatisasi yang efisien dan andal.
+                    Saya senang mempelajari teknologi baru, mengembangkan proyek secara mandiri, dan memecahkan masalah teknis secara sistematis. Fokus utama saya adalah menciptakan sistem yang fungsional, stabil, dan memiliki dampak nyata dalam kebutuhan industri maupun pengembangan produk.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Pendidikan</h2>
+                <div class="timeline-item">
+                    <h3>IPB University</h3>
+                    <div class="date">2024 - sekarang</div>
+                    <p>D4 - Teknologi Rekayasa Komputer</p>
+                    <p>IPK : 3.71 / 4.00</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>IPB University</h3>
+                    <div class="date">2023 - 2024 (D.O)</div>
+                    <p>D3 - Teknologi Industri Benih</p>
+                    <p>IPK : 3.18 / 4.00</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>SMAN 96 JAKARTA</h3>
+                    <div class="date">2021 - 2023</div>
+                    <p>Jurusan : IPA</p>
+                    <p>Nilai Rata-rata : 87.5</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Pengalaman</h2>
+                <div class="timeline-item">
+                    <h3>Tim Riset / Asisten Peneliti - Lab Bengkel Elektromekanik SV IPB</h3>
+                    <div class="date">2024 - Sekarang</div>
+                    <p>• Bertanggung jawab untuk desain mekanis menggunakan fusion 360</p>
+                    <p>• Mengembangkan dan mengimplementasikan sistem tertanam dibidang pertanian</p>
+                    <p>• Menganalisis permasalahan sistem elektronik pada penelitian</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Teknisi Utama - Vocational Robotic Club (VRC)</h3>
+                    <div class="date">2024 - Sekarang</div>
+                    <p>• Membuat robot dengan standar kompetisi nasional</p>
+                    <p>• Berkolaborasi dengan tim untuk memenangkan berbagai kompetisi</p>
+                    <p>• Mengikuti berbagai ajang kompetisi robotic dan IoT di berbagai kampus Indonesia</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Keahlian</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Programming</h3>
+                        <p>HTML, CSS, JavaScript, Python, C++</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Design</h3>
+                        <p>Fusion 360, EasyEDA</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Teknis</h3>
+                        <p>Electrical Troubleshoot</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Komunikasi</h3>
+                        <p>Presentasi, Public Speaking</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Teamwork</h3>
+                        <p>Kolaborasi, Leadership</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Bahasa</h3>
+                        <p>Indonesia, Inggris</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Prestasi</h2>
+                <div style="text-align: center;">
+                    <div class="achievement-badge" onclick="showProjectDetail('achievement1')">🥇 Juara 1 Lomba Pidato 2021 SMAS AL - Huda, Jakarta</div>
+                    <div class="achievement-badge" onclick="showProjectDetail('achievement2')">🥈 Juara 2 Sumo Robotic Competition 2024 UPNVJ, Jakarta</div>
+                    <div class="achievement-badge" onclick="showProjectDetail('achievement3')">🥉 Juara 3 Transporter Robotic Competition 2024 IPB University, Bogor</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Portfolio Project</h2>
+                <div class="portfolio-grid">
+                    <div class="project-card" onclick="showProjectDetail('project1')">
+                        <div class="project-image">🚀</div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Platform e-commerce modern dengan fitur pembayaran terintegrasi dan dashboard admin yang komprehensif.</p>
+                            <button class="view-details-btn">Lihat Detail →</button>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="showProjectDetail('project2')">
+                        <div class="project-image">💼</div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>Aplikasi manajemen tugas dengan fitur kolaborasi tim real-time dan notifikasi otomatis.</p>
+                            <button class="view-details-btn">Lihat Detail →</button>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="showProjectDetail('project3')">
+                        <div class="project-image">🎯</div>
+                        <div class="project-content">
+                            <h3>Data Analytics Dashboard</h3>
+                            <p>Dashboard analitik interaktif untuk visualisasi data bisnis dengan berbagai chart dan grafik.</p>
+                            <button class="view-details-btn">Lihat Detail →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <p>&copy; 2025 Duta Adithya Dewa.p>
+                <p>📧 dutadewa@apps.ipb.ac.id | 📱 +62 857 1418 0714 | 🔗 LinkedIn | 💻 GitHub</p>
+            </footer>
+        </div>
+
+        <!-- Achievement Detail 1 -->
+        <div class="project-detail" id="achievement1">
+            <div class="section">
+                <button class="back-btn" onclick="showMainContent()">← Kembali ke Profil</button>
+                
+                <div class="project-detail-header">
+                    <h1>🥇 Juara 1 Lomba Pidato</h1>
+                    <p class="tagline">Prestasi Gemilang dalam Kompetisi lokal SMAS AL - Huda</p>
+                </div>
+
+                <div class="project-meta">
+                    <div class="meta-item">📅 Tahun : 2021</div>
+                    <div class="meta-item">📍 Lokasi : Jakarta</div>
+                </div>
+
+                <div class="project-description">
+                    <h3>Deskripsi Prestasi</h3>
+                    <p style="margin-bottom: 15px;">
+                        Berhasil meraih juara pertama dalam lomba pidato yang diselenggarakan oleh SMAS AL - Huda, dengan membawakan tema "Pentingnya pendidikan demi sebuah peradaban Negara"
+                        Kompetisi ini menguji kemampuan dalam Public Speaking.
+                    </p>
+                    <p>
+                        Pencapaian ini merupakan hasil dari persiapan intensif selama 4 Minggu dan semangat kompetisi yang kuat
+                    </p>
+                </div>
+
+                <div class="project-description">
+                    <h3>Highlights</h3>
+                    <p>✅ Mengalahkan puluhan kompetitor</p>
+                    <p>✅ Apresiasi khusus dari Guru</p>
+                    <p>✅ Memberikan pengalaman baru di Dunia Public Speaking</p>
+                    <p>✅ Hadiah: Uang Tunai, Medali dan ATK</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievement Detail 2 -->
+        <div class="project-detail" id="achievement2">
+            <div class="section">
+                <button class="back-btn" onclick="showMainContent()">← Kembali ke Profil</button>
+                
+                <div class="project-detail-header">
+                    <h1>🥈 Juara 2 Robotic Sumo Competition</h1>
+                    <p class="tagline">Penghargaan Strategi Terbaik dan Posisi ke 2</p>
+                </div>
+
+                <div class="project-meta">
+                    <div class="meta-item">📅 Tahun : 2024</div>
+                    <div class="meta-item">🏢 Institusi : UPNVJ</div>
+                    <div class="meta-item">🎯 Kategori : Nasional </div>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-image"> <img src="upnsumo.jpeg" class="gallery-image"></div>
+                    <div class="gallery-image"> <img src="yy.jpeg" class="gallery-image"></div>
+                </div>
+
+                <div class="project-description">
+                    <h3>Deskripsi Penghargaan</h3>
+                    <p style="margin-bottom: 15px;">
+                        Menerima penghargaan sebagai Strategi terbaik dan posisi kedua dalam ajang kompetisi robot sumo skala nasional 
+                        Penghargaan ini diberikan kepada tim yang menunjukkan excellence dalam strategi maupun desain  robot.
+                    </p>
+                    <p>
+                        Pencapaian ini merupakan pengakuan atas dedikasi dan inovasi yang telah dilakukan selama 2 Bulan masa persiapan dan dedikasi dari perjalanan yang tak pernah berhenti.
+                    </p>
+                </div>
+
+                <div class="project-description">
+                    <h3>Impact & Recognition</h3>
+                    <p>🌟 Mengalahkan banyak Kontestan dari berbagai kampus</p>
+                    <p>🌟 Memberikan pengalaman baru tentang sportivitas kompetisi</p>
+                    <p>🌟 Memberikan medali pertama untuk organisasi VRC yang fokus di bidang kompetisi robotika</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievement Detail 3 -->
+        <div class="project-detail" id="achievement3">
+            <div class="section">
+                <button class="back-btn" onclick="showMainContent()">← Kembali ke Profil</button>
+                
+                <div class="project-detail-header">
+                    <h1>🥉 Juara 3 Robotic Transporter Competition</h1>
+                </div>
+
+                <div class="project-meta">
+                    <div class="meta-item">📅 Tahun : 2024</div>
+                    <div class="meta-item">🏛️ Institusi : IPB University</div>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-image"> <img src="mbf.jpeg" class="gallery-image"></div>
+                    <div class="gallery-image">🖼️ Badge Digital</div>
+                </div>
+
+                <div class="project-description">
+                    <h3>Deskripsi Kompetisi</h3>
+                    <p style="margin-bottom: 15px;">
+                        Berhasil menduduki posisi ke-3 pada kompetisi robot transporter skala nasional yang diselenggarakan oleh IPB University. 
+                        Kompetisi ini diharapkan membawa pengalaman lebih untuk pengetahuan teknis dan semangat kompetisi yang sportiv.
+                    </p>
+                </div>
+
+                <div class="project-description">
+                    <h3>Kompetensi yang Digunakan</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Desain mekanis fusion 360</span>
+                        <span class="tech-badge">Electrical Wiring</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <div class="project-detail" id="achievement3">
+            <div class="section">
+                <button class="back-btn" onclick="showMainContent()">← Kembali ke Profil</button>
+                
+                <div class="project-detail-header">
+                    <h1>🥉 Juara 3 Robotic Transporter Competition</h1>
+                </div>
+
+                <div class="project-meta">
+                    <div class="meta-item">📅 Tahun : 2024</div>
+                    <div class="meta-item">🏛️ Institusi : IPB University</div>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-image"> <img src="mbf.jpeg" class="gallery-image"></div>
+                    <div class="gallery-image">🖼️ Badge Digital</div>
+                </div>
+
+                <div class="project-description">
+                    <h3>Deskripsi Kompetisi</h3>
+                    <p style="margin-bottom: 15px;">
+                        Berhasil menduduki posisi ke-3 pada kompetisi robot transporter skala nasional yang diselenggarakan oleh IPB University. 
+                        Kompetisi ini diharapkan membawa pengalaman lebih untuk pengetahuan teknis dan semangat kompetisi yang sportiv.
+                    </p>
+                </div>
+
+                <div class="project-description">
+                    <h3>Kompetensi yang Digunakan</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Desain mekanis fusion 360</span>
+                        <span class="tech-badge">Electrical Wiring</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Project Detail 1 -->
+        <div class="project-detail" id="project1">
+            <div class="section">
+                <button class="back-btn" onclick="showMainContent()">← Kembali ke Portfolio</button>
+                
+                <div class="project-detail-header">
+                    <h1>🚀 E-Commerce Platform</h1>
+                    <p class="tagline">Platform Belanja Online Modern & User-Friendly</p>
+                </div>
+
+                <div class="project-meta">
+                    <div class="meta-item">📅 Durasi: 3 Bulan</div>
+                    <div class="meta-item">👥 Tim: 5 Orang</div>
+                    <div class="meta-item">🏢 Client: [Nama Client]</div>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-image">🖼️ Screenshot 1</div>
+                    <div class="gallery-image">🖼️ Screenshot 2</div>
+                </div>
+
+                <div class="project-description">
+                    <h3>Deskripsi Project</h3>
+                    <p style="margin-bottom: 15px;">
+                        Platform e-commerce lengkap yang dirancang untuk memberikan pengalaman berbelanja online yang mulus dan menyenangkan. 
+                        Project ini mencakup sistem manajemen produk yang komprehensif, keranjang belanja yang responsif, dan integrasi 
+                        pembayaran dengan berbagai metode pembayaran.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        Fitur-fitur utama meliputi: sistem pencarian produk dengan filter advanced, wishlist, review dan rating produk, 
+                        tracking pengiriman real-time, dan dashboard admin yang powerful untuk mengelola inventory, pesanan, dan laporan penjualan.
+                    </p>
+                    <p>
+                        Platform ini berhasil meningkatkan conversion rate sebesar 40% dan mengurangi cart abandonment rate hingga 25%.
+                    </p>
+                </div>
+
+                <div class="project-description">
+                    <h3>Teknologi yang Digunakan</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React.js</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Express.js</span>
+                        <span class="tech-badge">Redux</span>
+                        <span class="tech-badge">Stripe API</span>
+                        <span class="tech-badge">AWS</span>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <h3>Tantangan & Solusi</h3>
+                    <p style="margin-bottom: 10px;"><strong>Tantangan:</strong> Mengelola ribuan produk dengan performa tinggi dan response time yang cepat.</p>
+                    <p><strong>Solusi:</strong> Implementasi caching strategy dengan Redis dan optimasi database queries menggunakan indexing yang tepat.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Detail 2 -->
+        <div class="project-detail" id="project2">
+            <div class="section">
+                <button class="back-btn" onclick="showMainContent()">← Kembali ke Portfolio</button>
+                
+                <div class="project-detail-header">
+                    <h1>💼 Task Management App</h1>
+                    <p class="tagline">Kolaborasi Tim yang Efektif & Produktif</p>
+                </div>
+
+                <div class="project-meta">
+                    <div class="meta-item">📅 Durasi: 2 Bulan</div>
+                    <div class="meta-item">👥 Tim: 3 Orang</div>
+                    <div class="meta-item">🏢 Client: Internal Project</div>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-image">🖼️ Dashboard</div>
+                    <div class="gallery-image">🖼️ Task Board</div>
+                </div>
+
+                <div class="project-description">
+                    <h3>Deskripsi Project</h3>
+                    <p style="margin-bottom: 15px;">
+                        Aplikasi manajemen tugas yang dirancang khusus untuk meningkatkan produktivitas tim. Dengan interface yang 
+                        intuitif dan fitur kolaborasi real-time, aplikasi ini memudahkan tim untuk mengorganisir, melacak, dan 
+                        menyelesaikan tugas-tugas dengan lebih efisien.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        Fitur unggulan termasuk: drag-and-drop task board, assigning tasks dengan deadline, comment dan attachment 
+                        pada setiap task, notification system, time tracking, dan analytics untuk memonitor produktivitas tim.
+                    </p>
+                    <p>
+                        Aplikasi ini telah membantu lebih dari 50 tim untuk meningkatkan produktivitas mereka hingga 60%.
+                    </p>
+                </div>
+
+                <div class="project-description">
+                    <h3>Teknologi yang Digunakan</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Vue.js</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Socket.io</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">Chart.js</span>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <h3>Hasil & Impact</h3>
+                    <p>✅ Pengurangan waktu meeting hingga 30%</p>
+                    <p>✅ Peningkatan task completion rate sebesar 45%</p>
+                    <p>✅ Meningkatkan transparansi antar tim member</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Detail 3 -->
+        <div class="project-detail" id="project3">
+            <div class="section">
+                <button class="back-btn" onclick="showMainContent()">← Kembali ke Portfolio</button>
+                
+                <div class="project-detail-header">
+                    <h1>🎯 Data Analytics Dashboard</h1>
+                    <p class="tagline">Business Intelligence untuk Pengambilan Keputusan yang Tepat</p>
+                </div>
+
+                <div class="project-meta">
+                    <div class="meta-item">📅 Durasi: 4 Bulan</div>
+                    <div class="meta-item">👥 Tim: 4 Orang</div>
+                    <div class="meta-item">🏢 Client: [Perusahaan Retail]</div>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-image">📊 Sales Chart</div>
+                    <div class="gallery-image">📈 Analytics</div>
+                </div>
+
+                <div class="project-description">
+                    <h3>Deskripsi Project</h3>
+                    <p style="margin-bottom: 15px;">
+                        Dashboard analitik komprehensif yang mengintegrasikan berbagai sumber data untuk memberikan insights 
+                        bisnis yang actionable. Dashboard ini dirancang untuk membantu stakeholder membuat keputusan berbasis data 
+                        dengan visualisasi yang mudah dipahami.
+                    </p>
+                    <p style="margin-bottom: 15px;">
+                        Fitur-fitur meliputi: real-time data updates, customizable widgets, interactive charts (line, bar, pie, heatmap), 
+                        data filtering dan segmentation, export reports dalam berbagai format, dan predictive analytics menggunakan 
+                        machine learning untuk forecasting.
+                    </p>
+                    <p>
+                        Dashboard ini berhasil mengurangi waktu pembuatan laporan dari 2 hari menjadi hanya 10 menit.
+                    </p>
+                </div>
+
+                <div class="project-description">
+                    <h3>Teknologi yang Digunakan</h3>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Django</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">D3.js</span>
+                        <span class="tech-badge">Plotly</span>
+                        <span class="tech-badge">Pandas</span>
+                        <span class="tech-badge">Docker</span>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <h3>Key Achievements</h3>
+                    <p>🎯 Pemrosesan 1 juta+ data points per hari</p>
+                    <p>🎯 Response time < 2 detik untuk query kompleks</p>
+                    <p>🎯 Accuracy rate 95% untuk predictive models</p>
+                    <p>🎯 Meningkatkan ROI client sebesar 35%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
