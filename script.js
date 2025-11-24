@@ -57,3 +57,4 @@ window.addEventListener('popstate', function(event) {
 window.addEventListener('load', function() {
     history.replaceState({ page: 'home' }, '', '#home');
 });
+
